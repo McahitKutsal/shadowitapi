@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/a3150b11-83a7-4d8d-99f6-643b3ec982a3/resourceGroups/RG-01/providers/Microsoft.Web/sites/shadowitapi",
+    "appService.deploySubpath": "."
+}
