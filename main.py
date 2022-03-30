@@ -1,4 +1,3 @@
-from typing import Optional
 import pymongo
 from fastapi import FastAPI
 
@@ -14,8 +13,3 @@ app = FastAPI()
 @app.get("/filter")
 def read_root():
     return {'data':[x['domain'] for x in mycol.find({},{ "_id": 0 })]}
-
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Optional[str] = None):
-    return {"item_id": item_id, "q": q}
